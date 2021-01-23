@@ -34,15 +34,17 @@ const chromedriver = require('chromedriver');
 
     let samsung = await driver.findElements(By.className('_2iDkf8 t0pPfW'));
 
-    let elements = await driver.findElements(By.css('div[class="_2iDkf8 t0pPfW"]'));
+    let elements = await driver.findElements(By.className('_10UF8M'));
+
+
 
     for(let e of elements){
         let divText = await e.getText();
-        if(divText === "Samsung"){
+        if(divText === "Price -- High to Low"){
            // console.log(divText,"Matched");
            await e.click();
         }
-        console.log(divText)
+        console.log(divText);
     }
 
 
