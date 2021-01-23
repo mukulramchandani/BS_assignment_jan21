@@ -32,7 +32,6 @@ const chromedriver = require('chromedriver');
 
     let samsungCheckBox2 = await driver.wait(until.elementLocated(By.className('_2iDkf8 t0pPfW')),10000);
 
-    let samsung = await driver.findElements(By.className('_2iDkf8 t0pPfW'));
 
     let elements = await driver.findElements(By.className('_10UF8M'));
 
@@ -52,7 +51,7 @@ const chromedriver = require('chromedriver');
 
 
 
-    await samsungCheckBox2.click();
+    //await samsungCheckBox2.click();
 
     
 
